@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <title>To-Do</title>
+  </head>
+  <body>
+    <div
+      class="box-parent d-flex justify-content-center align-items-center w-100"
+    >
+      <div class="box bg-primary">
+        <!--Heading-->
+        <div class="h4 text-center text-white mt-2">My To-Dos</div>
+        <!--Add TO-DO-->
+        <div class="add-todo d-flex justify-content-between px-2">
+          <input
+            type="text"
+            class="form-control w-75"
+            id="input-todo"
+            placeholder="Input your To-Do"
+          />
+          <button class="btn btn-light rounded-3" id="add-btn">
+            <img src="./assets/add.png" alt="" />
+          </button>
+        </div>
+        <!---TO-DO list-->
+        <ul class="list-group p-2" id="todo-list">
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
